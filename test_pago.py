@@ -1,4 +1,4 @@
-from pago import procesar_pago
+from pago import calcular_descuento, procesar_pago, verificar_usuario
 
 
 def test_pago_aprobado():
@@ -35,3 +35,15 @@ def test_monto_invalido():
 
     # Assert
     assert resultado == "Monto invalido"
+
+
+def test_calcular_descuento():
+    assert calcular_descuento(100) == 90
+
+
+def test_verificar_usuario_admin():
+    assert verificar_usuario("admin") is True
+
+
+def test_verificar_usuario_no_admin():
+    assert verificar_usuario("luciano") is False
