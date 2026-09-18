@@ -7,4 +7,6 @@ def procesar_pago(monto, saldo):
     else:
         return "Saldo insuficiente"
 
+
 # Funcion utilizada para las pruebas de calidad
+# Control automatico mediante pre-commit
