@@ -6,3 +6,5 @@ def procesar_pago(monto, saldo):
         return "Pago aprobado"
     else:
         return "Saldo insuficiente"
+
+# Funcion utilizada para las pruebas de calidad
